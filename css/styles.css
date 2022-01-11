@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --barlowFont: 'Barlow', sans-serif;
+    --frauncesFont: 'Fraunces', serif;
+
+    /* Colors */
+    /* Primary */
+    --softRed: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --darkDesaturatedCyan: hsl(167, 40%, 24%);
+    --darkBlue: hsl(198, 62%, 26%);
+    --darkModerateCyan: hsl(168, 34%, 41%);
+
+    /* Neutral */
+    --veryDarkDesaturatedBlue: hsl(211, 26%, 19%);
+    --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --darkGrayishBlue: hsl(233, 10%, 55%);
+    --grayishBlue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--barlowFont);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--frauncesFont);
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-image: url(../img/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.navbar {
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__toggler {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 5.5rem 0 18.5rem;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: 6.25px;
+    line-height: 49px;
+    position: relative;
+}
+
+.hero__title::after {
+    content: "";
+    display: block;
+    background-image: url(../img/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3.25rem;
+    width: 36px;
+    height: 114px;
+} 
+
+@media (min-width: 1200px) {
+    .section__mobile-bg {
+        display: none;
+    }
+}
+
+.section__info {
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.section__title {
+    font-size: 2rem;
+    line-height: 39px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.section__text {
+    color: var(--darkGrayishBlue);
+    font-size: 1.125rem;
+    line-height: 30px;
+    margin-top: 1.5rem;
+}
+
+.section__link {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 0.938rem;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: var(--frauncesFont);
+    font-weight: 900;
+    color: #24303E;
+    position: relative;
+}
+
+.section__link::after {
+    content: "";
+    display: block;
+    width: 137px;
+    height: 10px;
+    border-radius: 28px;
+    background-color: transparent;
+    opacity: 25%;
+    margin-top: -10px;
+    position: relative;
+    z-index: -1;
+}
+
+.section__link.section__link--yellow::after {
+    background-color: var(--yellow);
+}
+
+.section__link.section__link--red::after {
+    background-color: var(--softRed);
+}
+
+.graphic-design {
+    background-image: url(../img/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.photography {
+    background-image: url(../img/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.graphic-design__info,
+.photography__info {
+    padding: 24.875rem 1.5rem 3.688rem;
+    text-align: center;
+}
+
+.graphic-design__info {
+    color: var(--darkDesaturatedCyan);
+}
+
+.photography__info {
+    color: var(--darkBlue);
+}
+
+.graphic-design__title,
+.photography__title {
+    font-size: 1.75rem;
+    line-height: 35px;
+    letter-spacing: -0.2px;
+}
+
+.graphic-design__text,
+.photography__text {
+    margin-top: 1.688rem;
+    font-size: 0.969rem;
+    line-height: -0.11px;
+    line-height: 27px;
+}
