@@ -92,6 +92,12 @@ ul {
 }
 
 @media (min-width: 1200px) {
+    .navbar {
+        padding-top: 2.125rem;
+    }
+}
+
+@media (min-width: 1200px) {
     .navbar__logo {
         width: 170px;
         display: inline-block;
