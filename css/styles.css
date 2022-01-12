@@ -29,6 +29,7 @@
 }
 
 body {
+    background-color: #FFFCF8;
     font-family: var(--barlowFont);
     font-weight: 600;
     font-size: 1rem;
@@ -483,6 +484,12 @@ ul {
 .testimonials {
     padding: 4rem 0 5.375rem;
     text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .testimonials {
+        padding: 10rem 0;
+    }
 }
 
 .testimonials__title {
