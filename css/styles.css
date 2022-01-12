@@ -360,11 +360,11 @@ ul {
     font-size: 1.125rem;
     line-height: 30px;
     margin-top: 1.5rem;
+    letter-spacing: -0.13px;
 }
 
 @media (min-width: 1200px) {
     .section__text {
-        font-size: 1.094rem;
         margin-top: 2rem;
     }
 }
@@ -511,6 +511,7 @@ ul {
     .testimonials__title {
         font-size: 1.25rem;
         line-height: 25px;
+        letter-spacing: 5px;
     }
 }
 
@@ -616,6 +617,12 @@ ul {
     justify-content: center;
     padding: 4rem 0 5rem;
     text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        padding: 4.5rem 0;
+    }
 }
 
 .footer__logo {
