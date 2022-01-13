@@ -139,12 +139,12 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    transform: translateX(150%);
+    transform: translateY(-150%);
     transition: transform .3s ease-in-out;
 }
 
 .nav--active {
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .nav::before {
@@ -173,7 +173,7 @@ ul {
         flex-direction: row;
         gap: 2.938rem;
         z-index: unset;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     .nav::before {
